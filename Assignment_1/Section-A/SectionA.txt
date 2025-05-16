@@ -1,0 +1,34 @@
+1. What problem does a Version Control System solve?
+Ans 1- Version Control System solves the problem of stoping software while adding features. VCS helps in shifting from one Version to another during fixing of bugs and adding new features.
+
+2. Differentiate between Centralized and Distributed VCS.
+Ans 2- Centralizes VCS - here, VCS is stored on Server and if server is corrupted then the whole VCS will crash.
+       Distributed VCS - Here, VCS stored locally as well as on server. which reduce the lose of VCS in case of corrupted. 
+
+3. What is Git and how is it different from GitHub?
+Ans 3- Git- Git is a distributed version control system which stored on server as well as on local computers.
+       github is a cloud- based platform which host git repositories.
+
+4. What is a staging area in Git?
+Ans 4- staging area stores the information of what will be stored in next commit. It is a file in git directory.
+
+5. What does the .git folder contain?
+Ans 5- .git contains all the necessay information of project , it stores the information like commit, history of code.
+
+6. What is git branching and command to create new branch and switching from one to
+another branch
+Ans 6- git branching is the copy of main branch/master. Developer can make changes in new branch without effecting the main branch. After review the changes in new branch , if company satisfied with changes then it will merge the new branch in master branch.
+Commands-
+Create new branch - git branch <new branch name>
+switching from one to anoher branch - git checkout <branch name in which you want to switch>
+
+7. What is the difference between git reset and git reset --hard?
+Ans 7- git reset - it shift the Head to previous commit.
+       git reset --hard - it permanently delete the commit. 
+
+8. What is a squash merge, and when would you use it?
+Ans 8- Squash merge- Single commit contains the collection of many commits , and this single commit merge with the master branch is known as squash merge.
+USE - using squash, history will not pollute. 
+
+9. Explain the use of git rebase with an example scenario.
+Ans 9- git rebase creates a linear history by moving feature branch onto main branch
