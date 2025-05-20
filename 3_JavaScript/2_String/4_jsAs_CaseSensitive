@@ -1,0 +1,3 @@
+let a = "a";
+let b = "A";
+console.log(a===b); // Strictly Equality -> Check value and Datatype of both variables
