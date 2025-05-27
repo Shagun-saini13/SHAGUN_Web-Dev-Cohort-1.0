@@ -11,5 +11,5 @@ let b=6;//ReferenceError: Cannot access 'b' before initialization
 
 greet();
 function greet(){
-    console.log("Hello");
+    console.log("Hello"); //Hello
 }
