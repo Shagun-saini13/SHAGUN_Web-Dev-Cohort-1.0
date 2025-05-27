@@ -18,3 +18,7 @@ console.log(arr1);
 
 arr1.shift();
 console.log(arr1);
+
+// To Modify element value in array
+arr1[1]=10;
+console.log(arr1);
