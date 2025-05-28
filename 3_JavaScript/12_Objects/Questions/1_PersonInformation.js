@@ -1,0 +1,9 @@
+const person={
+    name:"sam",
+    age:30
+}
+function Update(personobj,newage){
+    personobj.age=newage;
+}
+Update(person,20);
+console.log(person)
