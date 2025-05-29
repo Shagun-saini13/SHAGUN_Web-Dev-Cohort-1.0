@@ -1,5 +1,5 @@
 const person={
-    name:"sam",
+    name:"Alia",
     age:30
 }
 function Update(personobj,newage){
