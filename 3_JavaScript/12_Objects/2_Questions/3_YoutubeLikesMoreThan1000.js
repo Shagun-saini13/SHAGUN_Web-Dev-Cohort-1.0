@@ -17,6 +17,9 @@ const VideoLikes=(obj)=>{
     if(obj.Likes>1000) {
         return [obj.title,obj.Likes];
     }
+    else{
+        return `${obj.title} don't have enough likes`;
+    }
 }
 console.log(VideoLikes(youtubeVideo1));
 console.log(VideoLikes(youtubeVideo2));
