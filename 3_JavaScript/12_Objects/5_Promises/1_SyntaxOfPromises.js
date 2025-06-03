@@ -5,10 +5,10 @@
 
 // resolve
 let mypromise = new Promise (function(resolve,reject){
-    console.log("resolve");
+    console.log("resolve")
     resolve(100)
 })
-console.log(mypromise);
+console.log(mypromise)
 
 //pending
 let hlo = new Promise (function(resolve,reject){
