@@ -14,11 +14,11 @@ console.log(mypromise)
 let hlo = new Promise (function(resolve,reject){
     console.log("Pending")
 })
-console.log(hlo);
+console.log(hlo)
 
 // reject
 let byee = new Promise (function(resolve,reject){
-    console.log("reject")
+    console.log("reject");
     reject("failed")
 })
 console.log(byee)
