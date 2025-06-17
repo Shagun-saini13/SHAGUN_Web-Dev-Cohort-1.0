@@ -1,0 +1,22 @@
+/* Universal selector->* */
+*{
+    color:brown;
+}
+
+/* Element Selector->Element tag name */
+h2{
+    text-align:center;
+}
+
+/* Universal Selector-> .Class_name */
+.one{
+    background-color: aquamarine;
+}
+.two{
+    color:blue
+}
+
+/* ID Selector-> #Id_name */
+#hi{
+    text-align: end;
+}
