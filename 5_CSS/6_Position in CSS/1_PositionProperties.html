@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in CSS</title>
+    <style>
+        .first{
+            background-color:aquamarine;
+            
+            display:inline-flex;
+            justify-content: center;  /* Center text horizontally */
+            place-items: center;      /* Center text vertically */
+
+            height:50px;
+            width:50px;
+            /* border */
+            border:5px solid red;
+            border-radius: 10px;
+
+            /* Static Position-> no change*/
+            position:static;
+            top:10px;
+            /* Relative Position-> Element position changes with respect to itself */
+            position:relative;
+            top:12px;
+            left:5px;
+        }
+        .second{
+            background-color:aquamarine;
+            
+            display:inline-flex;
+            justify-content: center;  /* Center text horizontally */
+            place-items: center;      /* Center text vertically */
+
+            height:50px;
+            width:50px;
+            /* border */
+            border:5px solid red;
+            border-radius: 10px;
+
+            /* Absolute position-> */
+        }
+        .third{
+            background-color:aquamarine;
+            
+            display:inline-flex;
+            justify-content: center;  /* Center text horizontally */
+            place-items: center;      /* Center text vertically */
+
+            height:50px;
+            width:50px;
+            /* border */
+            border:5px solid red;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="first">1</div>
+    <div class="second">2</div>
+    <div class="third">3</div>
+</body>
+</html>
