@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position in CSS</title>
     <style>
+
+        div{
+            display:inline-block;
+        }
+
         .first{
             background-color:aquamarine;
             
-            display:inline-flex;
-            justify-content: center;  /* Center text horizontally */
-            place-items: center;      /* Center text vertically */
+            /* justify-content: center;  Center text horizontally */
+            /* place-items: center;      Center text vertically */
 
             height:50px;
             width:50px;
@@ -28,10 +32,6 @@
         }
         .second{
             background-color:aquamarine;
-            
-            display:inline-flex;
-            justify-content: center;  /* Center text horizontally */
-            place-items: center;      /* Center text vertically */
 
             height:50px;
             width:50px;
@@ -39,20 +39,23 @@
             border:5px solid red;
             border-radius: 10px;
 
-            /* Absolute position-> */
+            /* Absolute position->Element position changes with respect to its insister(element under element) */
+            position:absolute;
+            top:80px;
         }
         .third{
             background-color:aquamarine;
-            
-            display:inline-flex;
-            justify-content: center;  /* Center text horizontally */
-            place-items: center;      /* Center text vertically */
 
             height:50px;
             width:50px;
             /* border */
             border:5px solid red;
             border-radius: 10px;
+
+            /* Fixed position-> Element position changes with respect to browser */
+            position:fixed;
+           right:20px
+
         }
     </style>
 </head>
