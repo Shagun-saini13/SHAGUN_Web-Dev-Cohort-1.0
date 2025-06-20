@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Interactive Navigation Menu</title>
+<style>
+  /* Reset some default styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    min-height: 2000px; /* to enable scrolling */
+  }
+
+  /* Navigation bar styles */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+  }
+
+  /* Background color when scrolled */
+  nav.scrolled {
+    background-color: #333;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+
+  /* Navigation menu list */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+
+  /* Navigation menu items */
+  nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+
+  /* Menu item hover effect */
+  nav ul li a:hover {
+    background-color: #f39c12;
+    color: #222;
+  }
+
+  /* Initial text color when nav is transparent */
+  nav:not(.scrolled) ul li a {
+    color: #222;
+  }
+
+  nav:not(.scrolled) ul li a:hover {
+    background-color: #f39c12;
+    color: #fff;
+  }
+
+  /* Add some spacing to content so nav doesn't cover */
+  main {
+    padding-top: 80px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+</style>
+</head>
+<body>
+
+<nav id="navbar">
+  <ul>
+    <li><a href="#home" >Home</a></li>
+    <li><a href="#about" >About</a></li>
+    <li><a href="#services" >Services</a></li>
+    <li><a href="#contact" >Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="home" style="height: 600px; background: #eee; padding: 20px;">
+    <h1>Home Section</h1>
+    <p>Scroll down to see the navigation background change.</p>
+  </section>
+  <section id="about" style="height: 600px; background: #ddd; padding: 20px;">
+    <h1>About Section</h1>
+  </section>
+  <section id="services" style="height: 600px; background: #ccc; padding: 20px;">
+    <h1>Services Section</h1>
+  </section>
+  <section id="contact" style="height: 600px; background: #bbb; padding: 20px;">
+    <h1>Contact Section</h1>
+  </section>
+</main>
+
+<script>
+  // Select the nav bar
+  const navbar = document.getElementById('navbar');
+
+  // Listen for scroll events
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+</script>
+
+</body>
+</html>
